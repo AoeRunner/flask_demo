@@ -3,11 +3,11 @@
 # ================================================
 # @Time  :2021/3/21 20:09
 # @Author:汤易怀
-# @File  :emp_data.py
+# @File  :emp.py
 # @IDE   :PyCharm
 # @Phone :13926528314,微信同号
 # ================================================
-from db.base_mysql import Session
+from db.mysql import Session
 
 
 def search_emp_list():

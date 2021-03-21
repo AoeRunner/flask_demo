@@ -10,9 +10,11 @@
 from flask import Flask, render_template
 
 from controller.user import user
+from controller.emp import emp
 
 app = Flask(__name__)
 app.register_blueprint(user)
+app.register_blueprint(emp)
 
 
 @app.route('/')
@@ -26,4 +28,4 @@ def welcome():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
